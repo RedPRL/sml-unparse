@@ -88,7 +88,7 @@ struct
     in
       {partType = t,
        prepend =
-         left (t, #partType pt1, #prepend pt2)
+         left (t, #partType pt1, #prepend pt1)
          o cons (Unit c)
          o right (t, #partType pt2, #prepend pt2)}
     end

@@ -100,7 +100,7 @@ struct
   fun adj (pt1 : 'a part, pt2 : 'a part) =
     {partType = ADJ,
      prepend =
-       left (ADJ, #partType pt1, #prepend pt2)
+       left (ADJ, #partType pt1, #prepend pt1)
          o right (ADJ, #partType pt2, #prepend pt2)}
 
   fun done {prepend,partType} = prepend []

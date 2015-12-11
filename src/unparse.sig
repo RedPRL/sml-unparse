@@ -4,8 +4,9 @@ sig
 
   datatype 'a item =
       Unit of 'a
-    | Paren of 'a seq
-  withtype 'a seq = 'a item list
+    | Paren of 'a item list
+
+  type 'a seq = 'a item list
 
   type 'a part
   val atom : 'a -> 'a part

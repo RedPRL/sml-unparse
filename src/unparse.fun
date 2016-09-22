@@ -117,4 +117,6 @@ struct
     | spaces (h::t) = h ^ foldr op^ "" (map (fn s => " " ^ s) t)
 
   val parens = foldItem spaces (fn s => "(" ^ s ^ ")")
+  
+  val noparens = foldItem spaces (fn s => s)
 end
